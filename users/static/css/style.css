@@ -1,0 +1,43 @@
+body {
+  font-family: poppins;
+  background: #ecececec;
+}
+
+.box-area {
+  width: 930px;
+}
+
+.auth-title-1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.auth-title-2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: -20px;
+}
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+/* for Small screen */
+
+@media only screen and (max-width: 768px) {
+  .box-area {
+    margin: 0 10px;
+  }
+  div.header-text .auth-title-1 {
+    text-align: center;
+  }
+  div.header-text .auth-title-2 {
+    text-align: center;
+  }
+  .disable-shadow-sm {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .set-bg-to-white {
+    background: #fff;
+  }
+}
