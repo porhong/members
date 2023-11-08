@@ -8,6 +8,7 @@ class User(models.Model):
         User, on_delete=models.CASCADE, null=True, blank=True)
     eamil = models.CharField(max_length=200, null=True)
     password = models.CharField(max_length=200, null=False)
+    phoneNumber = models.IntegerField(max_length=10)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

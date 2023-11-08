@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %} {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body class="set-bg-to-white">
+        <!-- Main container -->
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+          <!-- Login Container -->
+          <div class="row border rounded-3 p-5 bg-white shadow box-area disable-shadow-sm">
+            <!-- Left Box -->
+                    <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" >
+                        <div class="featured-image">
+                            <img src="{% static 'images/logo.png' %}" class="img-fluid" style="width: 300px;">
+                        </div>
+                    </div>
+            <!-- Right Box -->
+                  {% block content %} 
+                    
+                  {% endblock %}
+                </div>
+        </div>
+    </div>
+  </body>
+</html>
